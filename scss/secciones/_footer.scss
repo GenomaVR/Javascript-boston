@@ -1,0 +1,27 @@
+/* FOOTER */
+
+footer {
+    margin-top: auto;
+}
+
+.text-center {
+    background-color: $colorFondo;
+    color: #fff;
+}
+
+.footer-all {
+    @extend %footer-all;
+}
+
+.d-flex{
+    border-top: solid 3px black;
+}
+
+
+.me-5 {
+    color: #fff;
+}
+
+.logo-footer {
+    @extend %logo-footer;
+}

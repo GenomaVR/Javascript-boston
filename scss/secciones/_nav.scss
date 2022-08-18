@@ -1,0 +1,21 @@
+
+/* NAV */
+.nav-link-edit {
+    @extend %nav-links-edit;
+}
+
+.nav-link-edit:hover {
+    @extend %nav-links-edit-hover;
+
+}
+
+.navbar {
+    background-color: $colorFondo;
+    border-bottom: solid black 2px;
+}
+
+.logo-nav-bar {
+    margin: 10px;
+    width: 70px;
+}
+

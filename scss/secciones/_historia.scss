@@ -1,0 +1,56 @@
+
+/* ----------------HISTORIA HTML------------------ */
+
+.historia-div {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.auerbach {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    align-items: center;
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 1);
+    margin: 30px;
+}
+
+.auerbach h4 {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.titulo-auer {
+    text-decoration: none;
+    color: $colorFondo;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.auer-div {
+    margin: 0px 10px 20px 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.auer-div a {
+    text-decoration: none;
+    color: white;
+    background-color: $colorFondo;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.auerbach p {
+    margin: 0px 10px 20px 10px;
+}
+
+.auer-img {
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}

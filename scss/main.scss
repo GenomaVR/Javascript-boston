@@ -1,0 +1,605 @@
+/* Boostrap insert */
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* Variables */
+
+@import './variables/colores';
+@import './variables/extend';
+@import './variables/tamanios';
+
+
+/* Secciones */
+
+
+@import './secciones/contacto';
+@import './secciones/equipo';
+@import './secciones/footer';
+@import './secciones/galeria';
+@import './secciones/historia';
+@import './secciones/inicio';
+@import './secciones/nav';
+@import 'secciones/index';
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: nba-celtics;
+    src: url(../font/nba-celtics.ttf);
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------MEDIA QUERY---------------------*/
+@media screen and (max-width:1345px) {
+
+    .nav-bar ul li {
+        font-size: 32px;
+    }
+
+    .carousel {
+        width: 1100px;
+     height: 800px;
+        border: solid 3px black;
+    }
+
+    .carousel-inner .carousel-item img {
+        width: 700px;
+        height: 794px;
+    }
+
+}
+
+@media screen and (max-width:1148px) {
+
+    .nav-bar ul li {
+        font-size: 25px;
+    }
+
+    .container-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 400px);
+    }
+
+    .carousel-inner .carousel-item img {
+        width: 800px;
+        height: 594px;
+    }
+
+    .carouselExampleIndicators {
+        width: 400px;
+    }
+
+    .carousel {
+        width: 800px;
+        height: 600px;
+        border: solid 3px black;
+    }
+
+    .carousel-caption h5 {
+        font-size: 25px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+
+@media screen and (max-width:830px) {
+
+    .nav-bar ul li {
+        font-size: 23px;
+        margin: 5px;
+        padding: 0;
+
+    }
+
+    .slider-wrapper {
+        font-size: 40px;
+    }
+
+    @keyframes slide {
+        0% {margin-top: -230px;}
+        20% {margin-top: -230px;}
+        33% {margin-top: -115px;}
+        50% {margin-top: -115px;}
+        58% {margin-top: -36px;}
+        63% {margin-top: 0px;}
+        100% {margin-top: 0px;}
+    }
+
+
+    .tituloh1 {
+        font-size: 32px;
+    }
+
+    .carousel-inner .carousel-item img {
+        width: 700px;
+        height: 494px;
+    }
+
+    .carousel {
+        width: 700px;
+        height: 500px;
+        border: solid 3px black;
+    }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .img1 {
+        width: 500px;
+    }
+
+    .news-primaria {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .nav-bar ul li {
+        font-size: 16px;
+        margin: 5px;
+        padding: 0;
+
+    }
+
+    .carousel-inner .carousel-item img {
+        width: 500px;
+        height: 394px;
+    }
+
+    .carouselExampleIndicators {
+        width: 300px;
+    }
+
+    .carousel {
+        width: 500px;
+        height: 400px;
+        border: solid 3px black;
+    }
+
+    .carousel-caption h5 {
+        font-size: 25px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:664px){
+
+.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+
+
+@media screen and (max-width:637px) {
+
+    .footer-items ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .footer-items ul a i {
+        font-size: 32px;
+    }
+
+    .footer-items ul a {
+        font-size: 16px;
+    }
+
+
+
+    .footer-all {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .blog-noticias div img {
+        width: 150px;
+        height: 120px;
+    }
+
+    .aporte {
+        position: relative;
+        bottom: 50px;
+        color: white;
+        font-size: 50px;
+    }
+
+    .container-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 400px);
+        grid-gap: 20px;
+    }
+
+    .titulares {
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:588px) {
+
+    .titulo-galery  {
+        font-size: 35px;
+    }
+
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        margin: 5px;
+        padding: 0;
+
+    }
+
+    .news {
+        width: 250px
+    }
+
+    .img1 {
+        width: 250px;
+    }
+
+    .news-primaria {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img2 {
+        width: 200px;
+    }
+
+    .img3 {
+        width: 200px;
+    }
+
+    .img4 {
+        width: 200px;
+    }
+
+    .img5 {
+        width: 200px;
+    }
+
+    .img-side-2 {
+        display: flex;
+    }
+
+    .udoka-foto {
+        width: 300px;
+    }
+
+    .forum-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .aporte {
+        position: relative;
+        bottom: 50px;
+        font-size: 30px;
+    }
+
+
+
+    #mensaje {
+        padding: 0px;
+    }
+
+    #submit {
+        margin: 0px;
+    }
+
+    .carousel-inner .carousel-item img {
+        width: 400px;
+        height: 294px;
+    }
+    
+    .carouselExampleIndicators {
+        width: 300px;
+    }
+    
+    .carousel {
+        width: 400px;
+        height: 300px;
+        border: solid 3px black;
+    }
+
+
+    .slider-wrapper{
+          visibility: hidden;
+          width: 0;
+          height: 0;
+        }
+
+}
+
+
+
+@media screen and (max-width:435px) {
+
+    .titulo-galery  {
+        font-size: 30px;
+    }
+
+    .blog-noticias div img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .footer-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .footer-items ul a i {
+        font-size: 32px;
+    }
+
+    .footer-items ul a {
+        font-size: 16px;
+    }
+
+    .footer-all {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .titulo-animate p {
+        font-size: 16px;
+    }
+
+    .udoka-foto {
+        width: 220px;
+    }
+
+    .news-primaria p {
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .container-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11 1fr);
+        grid-gap: 20px;
+    }
+
+    .w-2-2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .w-2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .w-3 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .auerbach {
+        width: 280px;
+    }
+
+    .auer-img {
+        width: 180px;
+    }
+
+    .card-1 .face {
+        
+        width: 250px;
+        height: 300px;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+
+    .blog-noticias h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    .blog-titulo {
+        font-size: 16px;
+    }
+
+    .titulo-galery  {
+        font-size: 25px;
+    }
+
+
+    .gallery-item .card-1  {
+        height: 300px;
+        display: flex;
+    }
+
+    .gallery-item {
+        height: 300px;
+        display: flex;
+    }
+
+    .gallery-container{
+        height: 300px;
+        display: flex;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+.card-1 .face {
+        
+    width: 200px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-2 .face {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-3 .face {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-4 .face {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-5 .face {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-6 .face {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-7 .face {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+}
+
+@media screen and (max-width:320px) {
+.carousel-inner .carousel-item img {
+    width: 300px;
+    height: 194px;
+}
+
+.carousel {
+    width: 300px;
+    height: 200px;
+    border: solid 3px black;
+}
+
+.nav-bar ul li a {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 5px;
+    padding: 0;
+}
+
+.nav-bar {
+    margin: 0;
+}
+
+.img1 {
+    width: 250px;
+}
+
+.tituloh1 {
+    margin-top: 40px;
+}
+
+.smart-content {
+    margin-bottom: 20px;
+}
+
+}

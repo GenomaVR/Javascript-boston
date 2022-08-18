@@ -1,0 +1,221 @@
+
+/* TITULO Y ANIMATE */
+
+.titulo-animate {
+    @extend %titulo-animate
+}
+
+.tituloh1 {
+    @extend %tituloh1;
+}
+.animate__animated {
+    @extend %animate__animated;
+}
+
+/* carousel */
+
+.titulares {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.content-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider-wrapper {
+    font-size: 70px;
+    color: #007A33;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.slider {
+    height: 90px;
+    padding-left: 15px;
+    overflow: hidden;
+
+}
+
+.slider div {
+    color: #fff;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+}
+
+.slider-text1 {
+    background: #3eb535;
+    animation: slide 4s linear infinite;
+}
+
+.slider-text2 {
+    background: #3eb535;
+}
+
+.slider-text3 {
+    background: #3eb535;
+}
+
+@keyframes slide {
+    0% {margin-top: -330px;}
+    20% {margin-top: -330px;}
+    33% {margin-top: -170px;}
+    50% {margin-top: -170px;}
+    58% {margin-top: -82px;}
+    63% {margin-top: -10px;}
+    100% {margin-top: -10px;}
+}
+
+.carousel-inner .carousel-item img {
+    width: 700px;
+    
+}
+
+.carouselExampleIndicators {
+    width: 700px;
+}
+
+.carousel {
+    width: 1200px;
+    border: solid 4px black;
+}
+
+.carousel-caption h5 {
+    color: $colorFondo;
+    font-family: nba-celtics;
+    background-color: #fff;
+}
+
+.carousel-caption p {
+    color: $colorFondo;
+    font-family: nba-celtics;
+    background-color: #fff;
+}
+
+.carousel-caption h5 {
+    font-size: 35px;
+}
+
+.carousel-caption p {
+    font-size: 25px;
+}
+
+
+
+/* Blog content */
+
+.noticias-img {
+    margin-left: 20px;
+}
+
+.blog-content {
+    margin: 0 auto;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.blog-noticias {
+    border-top: $colorFondo solid 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-noticias h2 {
+    font-size: 42px;
+    color: $colorFondo;
+}
+
+.blog-titulo {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.noti1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloynoti1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulonoti1 {
+    margin-left: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 26px;
+
+}
+
+.parra1 {
+    margin-left: 20px;
+}
+
+.tatumkobe {
+    width: 200px;
+    @include border-img($colorFondo, $bordeChico);
+}
+
+/* NOTI 2 BLOG */
+.noti2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.jaylenph {
+    width: 200px;
+    @include border-img($colorFondo, $bordeChico);
+}
+
+.titulonoti2 {
+    margin-left: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.parra2 {
+    margin-left: 20px;
+}
+
+/* NOTI 3 BLOG */
+.noti3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.udokaph {
+    width: 200px;
+    @include border-img($colorFondo, $bordeChico);
+}
+
+.titulonoti3 {
+    margin-left: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.parra3 {
+    margin-left: 20px;
+}

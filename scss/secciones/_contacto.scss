@@ -1,0 +1,53 @@
+
+
+
+/* ----------------CONTACTO HTML------------------ */
+
+.bkg-img {
+    @extend %bkg-img;
+}
+.titulo-forum {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.forum-border-color {
+    border: solid 3px white;
+    border-radius: 3px;
+    padding: 40px;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+#buttons-forum-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#buttons-forum-social button{
+    width: 40px;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-bottom-forum{
+    display: flex;
+    justify-content: center;
+}
+#floatingTextarea {
+    height: 200px;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}

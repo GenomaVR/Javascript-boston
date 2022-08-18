@@ -1,0 +1,167 @@
+/* extend NAV */
+
+%nav-links-edit {
+    color: #fff;
+    font-size: 32px;
+    font-family: nba-celtics;
+    text-decoration: none;
+    padding: 10px;
+}
+
+%nav-links-edit-hover {
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Footer */
+
+%logo-footer {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+%footer-all {
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorFondo;
+    border-top: 2px solid black;
+}
+
+/* TITULO Y ANIMATE HTML INDEX */
+
+%titulo-animate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+%tituloh1 {
+    font-weight: 700;
+    font-size: 80px;
+    background-color: $colorFondo;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-family: nba-celtics;
+}
+
+%animate__animated{
+    text-align: center;
+    font-size: 60px;
+    color: $colorFondo;
+    font-weight: 700;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: nba-celtics;
+}
+
+
+
+
+/* EQUIPOS y MIXIN para bordes */
+
+@mixin border-img ($colorFondo, $bordeChico) {
+    border: $colorFondo solid $bordeChico;
+}
+
+@mixin border-img-2 ($colorFondo, $bordeGrande) {
+    border: $colorFondo solid $bordeGrande;
+}
+
+/* CARDS */
+
+%card-1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%card-1-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+%card-1-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+%card-1-front-h3 {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+%card-1-back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px black;
+    text-align: center;
+}
+
+%card-1-back-h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+/* BKG IMG */
+
+%bkg-img {
+    margin-top: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), $colorSecundario), url(../bkg-contacto/garnett.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#forum-bkg {
+    width: 100%;
+    margin: 0;
+    margin-top: 0px;
+}
+
+%loginbkg {
+    margin-top: 0;
+    height: 100vh;
+    background-image: url(../img/celtics.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
