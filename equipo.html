@@ -59,19 +59,19 @@
       
       <div class="row align-items-md-stretch" id="ambasCajas" >
         <div class="col-md-6" id="buscarJugador">
-          <div class="h-100 p-5 text-white bg-dark rounded-3">
-            <h2 class="tituloJugador">Busca a tu jugador de abajo para saber mas estadisticas</h2>
-            <p id="idAyuda">Jugador</p>
+          <div class=" p-5 text-white bg-success rounded-3" id="cajaNegraBusqueda">
+            <h2 class="tituloJugador">Busca al jugador de abajo para mas info</h2>
+            <!-- <p id="idAyuda">Jugador</p>  -->
             <input class="form-control" type="text" id="jugadorPedido" placeholder="Busca a tu jugador">
             
-            <button class="btn btn-outline-light" onclick="buscarJugador()" type="button">Verificar</button>
+            <button class="btn btn-outline-light bg-black" id="btnBuscarJugador" type="button">Verificar</button>
           </div>
         </div>
         <div class="col-md-6" id="descJugador">
-          <div class="h-100 p-5 bg-light border rounded-3">
-            <h2 class="tituloJugador">Estadisticas</h2>
-            <p id="idResultado">Resultado</p>
-            <ul id="listadoUL">
+          <div class="h-100 p-5 bg-success border rounded-3">
+            <h2 class="tituloJugador">Datos del jugador</h2>
+            <p id="idResultado">Resultado de tu busqueda</p>
+            <ul id="listadoLI">
   
             </ul>
           </div>

@@ -1,5 +1,7 @@
 let nombreIngresado;
 
+swal("Bienvenido a celtics Argentina, la pagina esta en modo de construccion para logearte utiliza", "User: guest password:1234");
+
 
 function LogIn()
 {

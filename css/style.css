@@ -7995,11 +7995,40 @@ textarea.form-control-lg {
   margin-top: 20px;
   font-family: nba-celtics; }
 
+#ambasCajas {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+
+#buscarJugador {
+  width: 30vw;
+  color: #007A33; }
+
+#colorcaja {
+  color: #007A33; }
+
+#jugadorPedido {
+  margin-bottom: 10px; }
+
+#descJugador {
+  width: 30vw; }
+
 #descJugador {
   margin: 20px; }
 
 #buscarJugador {
   margin: 20px; }
+
+.tituloJugador {
+  font-size: 25px;
+  color: white; }
+
+#idResultado {
+  font-size: 16px;
+  color: white; }
+
+#listadoLI {
+  font-size: 20px; }
 
 .primer-team {
   display: flex;
