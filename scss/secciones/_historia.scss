@@ -1,6 +1,43 @@
 
 /* ----------------HISTORIA HTML------------------ */
 
+.ambasCajasHistoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celticsTeam{
+    font-size: 25px;
+    color: white;
+}
+
+#descCeltics{
+    width: 30vw;
+}
+
+#descCeltics {
+    margin: 20px;
+}
+
+#buscarInfoCeltic{
+    width: 30vw;
+    color: #007A33;
+    
+}
+
+#btnBuscarInfo:hover{
+    background:linear-gradient(to bottom, #0f6b12 5%, #1be049 100%);
+	background-color:#0f6b12;
+}
+
+#cajaCelticBusqueda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------HISTORIA HTML------------------ */
 .historia-div {
     display: flex;
     margin-top: 50px;

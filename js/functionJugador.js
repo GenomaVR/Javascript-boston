@@ -52,7 +52,7 @@ const jugadorEncontrado = arrayDeJugadores.filter((el) => el.nombre.includes(bus
 // || arrayDeJugadores.filter((apellido) => apellido.apellido.includes(busquedaJugador))
 
 
-            console.log(jugadorEncontrado);
+            console.log(...jugadorEncontrado);
          //   alert(JSON.stringify(jugadorEncontrado));
 
 
@@ -91,9 +91,6 @@ let listadoLI=document.getElementById('listadoLI');
         listadoLI.appendChild(crear);
     //    listadoLI.appendChild(jugador.retornarNodoLI());
     }
-
-     
-
 
 }
 else{
@@ -290,4 +287,4 @@ function mostrarJugadores()
                   
 
                  
-
+// cambios realizados
